@@ -1,0 +1,11 @@
+C:\Users\Cristhian Taveras\source\repos\SystemAutobuses\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Cristhian Taveras\source\repos\SystemAutobuses\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Cristhian Taveras\source\repos\SystemAutobuses\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\Cristhian Taveras\source\repos\SystemAutobuses\CapaNegocio\bin\Debug\CapaEntidad.dll
+C:\Users\Cristhian Taveras\source\repos\SystemAutobuses\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\Cristhian Taveras\source\repos\SystemAutobuses\CapaNegocio\bin\Debug\CapaEntidad.pdb
+C:\Users\Cristhian Taveras\source\repos\SystemAutobuses\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\Cristhian Taveras\source\repos\SystemAutobuses\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Cristhian Taveras\source\repos\SystemAutobuses\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\Cristhian Taveras\source\repos\SystemAutobuses\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Cristhian Taveras\source\repos\SystemAutobuses\CapaNegocio\obj\Debug\CapaNegocio.pdb

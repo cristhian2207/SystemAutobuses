@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5FBD2EC-8305-45EE-BEEF-56B697E1C903}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SystemAutobuses</RootNamespace>
+    <AssemblyName>SystemAutobuses</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAutobuses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAutobuses.Designer.cs">
+      <DependentUpon>FormAutobuses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChoferes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChoferes.Designer.cs">
+      <DependentUpon>FormChoferes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIniciarViaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIniciarViaje.Designer.cs">
+      <DependentUpon>FormIniciarViaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRutas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRutas.Designer.cs">
+      <DependentUpon>FormRutas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTerminarViaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTerminarViaje.Designer.cs">
+      <DependentUpon>FormTerminarViaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="P_Autobuses.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAutobuses.resx">
+      <DependentUpon>FormAutobuses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChoferes.resx">
+      <DependentUpon>FormChoferes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIniciarViaje.resx">
+      <DependentUpon>FormIniciarViaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRutas.resx">
+      <DependentUpon>FormRutas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTerminarViaje.resx">
+      <DependentUpon>FormTerminarViaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaEntidad\CapaEntidad.csproj">
+      <Project>{345dac1d-cabb-499b-b06a-a910f566b283}</Project>
+      <Name>CapaEntidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
+      <Project>{4bc8b284-ffd1-4a4f-9b30-0cfcc99fe642}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SQLPARSERCOMLib">
+      <Guid>{9FB0B340-2265-11D2-BF06-00A0C9B82ABA}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\bus-transportation-logo-free-vector.jpeg" />
+    <Content Include="i.ico" />
+    <None Include="Resources\editar %281%29.png" />
+    <Content Include="Resources\editar.ico" />
+    <None Include="Resources\eliminar %281%29.png" />
+    <Content Include="Resources\eliminar.ico" />
+    <None Include="Resources\send %281%29.png" />
+    <Content Include="Resources\send.ico" />
+    <None Include="Resources\send1.ico" />
+    <None Include="Resources\send.png" />
+    <None Include="Resources\Logo_Sitransporte_Arequipa.png" />
+    <None Include="Resources\u.png" />
+    <None Include="Resources\o.png" />
+    <None Include="Resources\i.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
